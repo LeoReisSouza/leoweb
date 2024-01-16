@@ -1,0 +1,25 @@
+/* public/css/custom.css */
+
+body {
+    background-color: #dad3cd;
+    color: #1b1f22;
+}
+
+.navbar {
+    background-color: #1b1f22;
+    color: #dad3cd;
+}
+
+.container {
+    background-color: #dad3cd;
+    color: #1b1f22;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Adicione estilos adicionais conforme necessário */
+
+/* Adicione o estilo do ícone ao lado do título, se aplicável */
+.navbar-brand img {
+    margin-right: 10px;
+}
