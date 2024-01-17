@@ -11,6 +11,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-Cv8t+6QIBGhqZvlUW2hdTpXBxkeT+TZI2dRRcWeQjz92q3S+xW8IFOnDCh9MOwP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+
 </head>
 @yield('content')
 
@@ -28,8 +33,8 @@
     <div class="container" style="font-size: 24px;">
         <a class="navbar-brand" href="#">Portifólio</a>
         <div class="navbar-links" style="font-size: 24px; font-family: 'Pixelify Sans', sans-serif;">
-            <a href="#home">Home</a>
             <a href="#perfil">Perfil</a>
+            <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </div>
     </div>
@@ -50,16 +55,73 @@
     <!-- Conteúdo da sessão escura -->
     <div class="container">
         <h1>Perfil</h1>
-        <p>Role para cima para voltar à tela inicial.</p>
+        <p style="font-size: 17px">Olá, meu nome é Leonardo, tenho 20 anos e estou no último ano da faculdade de Análise e Desenvolvimento de Sistemas. Ao longo da minha jornada, adquiri habilidades sólidas em <span class="destacado">PHP</span>, Angular, <span class="destacado">Laravel</span>, SQL, HTML5, CSS3 e <span class="destacado">Javascript (ES6)</span>. Além disso, aplico a metodologia ágil Scrum. Estou entusiasmado para contribuir com minha paixão pelo desenvolvimento e agregar valor em projetos inovadores.</p>
     </div>
 </div>
 
-<div class="section claro"  id="contato">
-<div class="container">
-        <h1>Contato</h1>
+<div class="section claro"  id="projetos">
+    <div class="container">
+        <h1>Projetos</h1>
         <p>Role para cima para voltar à tela inicial.</p>
+        <div class="catalogo">
+            <div class="card" style="background-color: #1b1f22;">
+                <img src="https://assets.materialup.com/uploads/19d58036-18af-4306-803d-0f5702b41872/preview.jpg">
+                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Clone Twitter</p>
+                <p  style="color: #dad3cd; font-size:14px">usando react e node</p>
+                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza'">Visualizar</button>
+            </div>
+            
+            <div class="card"  style="background-color: #1b1f22;">
+                <img src="https://landing.moqups.com/img/product-shots/wireframes-and-mockups.png">
+                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Lista To do</p>
+                <p  style="color: #dad3cd; font-size:14px">usando angular e typescript</p>
+                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza'">Visualizar</button>
+            </div>
+            
+            <div class="card"  style="background-color: #1b1f22;">
+                <img src="https://assets.materialup.com/uploads/19d58036-18af-4306-803d-0f5702b41872/preview.jpg" alt="Produto 3">
+                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Clone Netflix</p>
+                <p  style="color: #dad3cd; font-size:14px">usando laravel e vue</p>
+                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza'">Visualizar</button>
+            </div>
+
+            <div class="card"  style="background-color: #1b1f22;">
+                <img src="https://landing.moqups.com/img/product-shots/wireframes-and-mockups.png" alt="Produto 4">
+                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Calculadora</p>
+                <p  style="color: #dad3cd; font-size:14px">usando java web</p>
+                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza'">Visualizar</button>
+            </div>
+        </div>
     </div>
 </div>
+
+<div class="section escuro"  id="contato">
+    <div class="container">
+        <h1>Contato</h1>
+        <div class="contato">
+            <div class="info">
+                <i class="material-icons" style="color: #dad3cd;">phone</i>
+                <a href="https://api.whatsapp.com/send?phone=5511966030157">11 96603-0157</a>
+            </div>
+
+            <div class="info">
+                 <i class="material-icons" style="color: #dad3cd;">link</i>  <a href="https://www.linkedin.com/in/leonardo-reis-04462220a/" target="_blank">Linkedin</a>
+            </div>
+
+            <div class="info">
+                <i class="material-icons" style="color: #dad3cd;">email</i>
+                <a href="mailto:leonardoleoreissouza05@gmail.com">leonardoleoreissouza05@gmail.com</a>
+            </div>
+
+            <div class="info">
+                 <i class="material-icons" style="color: #dad3cd;">memory</i>  <a href="https://github.com/LeoReisSouza" target="_blank">GitHub</a>
+            </div>
+
+        
+        </div>
+    </div>
+</div>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -81,6 +143,7 @@
                 darkBlueSection.classList.remove('claro');
             }
         });
+
 </script>
 </body>
 
