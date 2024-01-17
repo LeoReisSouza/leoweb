@@ -20,12 +20,12 @@ html {
 
 .claro {
     background-color: #dad3cd;
-    color: #1b1f22; /* Cor do texto na sessão clara */
+    color: #1b1f22; 
 }
 
 .escuro {
     background-color: #1b1f22; 
-    color: #dad3cd; /* Cor do texto na sessão escura */
+    color: #dad3cd; 
 }
 
 h1 {
@@ -37,7 +37,6 @@ p {
     font-size: 20px;
 }
 
-
 .container {
     background-color: inherit;
     padding: 20px;
@@ -46,17 +45,18 @@ p {
 }
 
 .claro .container {
-    color: #1b1f22; /* Cor do texto na sessão clara */
+    color: #1b1f22;
 }
 
 .escuro .container {
-    color: #dad3cd; /* Cor do texto na sessão escura */
+    color: #dad3cd; 
 }
 
 
 /* navbar */
+
 .navbar-principal {
-    background-color: #dad3cd; /* Cor de fundo da barra de navegação */
+    background-color: #dad3cd; 
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -70,27 +70,27 @@ p {
 }
 
 .navbar-principal .navbar-brand {
-    color: #1b1f22; /* Cor do texto do nome do site */
+    color: #1b1f22;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
 }
 
 .navbar-principal .navbar-links a {
-    color: #1b1f22; /* Cor do texto dos links na barra de navegação */
+    color: #1b1f22; 
     text-decoration: none;
     margin-left: 20px;
 }
 
 .navbar-principal .navbar-links a:hover {
-    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse sobre os links */
+    text-decoration: underline; 
 }
 
 
 /*animacao do texto*/
 
 .typewriter {
-    overflow: hidden; /* Para esconder o texto que vai além da caixa */
+    overflow: hidden;
     display: flex;
 
 }
@@ -120,4 +120,12 @@ p {
     50% {
         border-color: #000;
     }
+}
+
+/*imageeemns*/
+.imagem-inferior-direito {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0px;
 }

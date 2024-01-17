@@ -43,6 +43,7 @@
         </div>
         <p>Desenvolvedor Full-Stack</p>
     </div>
+    <img src="/leoweb/leoweb/resources/img/mini-leo.png" alt="Imagem no canto inferior direito" class="imagem-inferior-direito">
 </div>
 
 <div class="section escuro"  id="perfil">
@@ -65,13 +66,11 @@
       const textElement = document.getElementById('typed-text');
       const text = "Leonardo Reis";
 
-        // Define o texto
-            textElement.innerText = text;
+        textElement.innerText = text;
 
-     // Adiciona a classe para iniciar a animação
-     textElement.classList.add('typing-animation');
+        textElement.classList.add('typing-animation');
     });
-        // Adiciona um listener de rolagem para alternar entre as seções
+
         document.addEventListener('scroll', function() {
             var scrollPosition = window.scrollY;
             var darkBlueSection = document.querySelector('.escuro');
