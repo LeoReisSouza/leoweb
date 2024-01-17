@@ -11,13 +11,17 @@ use app\Http\Controllers\ProjetosController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::get('/projetos', [ProjetosController::class, 'index']);
+
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/home', function () {
     return view('home');

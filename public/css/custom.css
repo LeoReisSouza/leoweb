@@ -1,25 +1,123 @@
-/* public/css/custom.css */
-
 body {
-    background-color: #dad3cd;
-    color: #1b1f22;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
 }
 
-.navbar {
-    background-color: #1b1f22;
-    color: #dad3cd;
+html {
+    scroll-behavior: smooth;
 }
+
+.section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.claro {
+    background-color: #dad3cd;
+    color: #1b1f22; /* Cor do texto na sessão clara */
+}
+
+.escuro {
+    background-color: #1b1f22; 
+    color: #dad3cd; /* Cor do texto na sessão escura */
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
 
 .container {
-    background-color: #dad3cd;
-    color: #1b1f22;
+    background-color: inherit;
     padding: 20px;
     margin-top: 20px;
+
 }
 
-/* Adicione estilos adicionais conforme necessário */
+.claro .container {
+    color: #1b1f22; /* Cor do texto na sessão clara */
+}
 
-/* Adicione o estilo do ícone ao lado do título, se aplicável */
-.navbar-brand img {
-    margin-right: 10px;
+.escuro .container {
+    color: #dad3cd; /* Cor do texto na sessão escura */
+}
+
+
+/* navbar */
+.navbar-principal {
+    background-color: #dad3cd; /* Cor de fundo da barra de navegação */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-principal .navbar-brand {
+    color: #1b1f22; /* Cor do texto do nome do site */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-principal .navbar-links a {
+    color: #1b1f22; /* Cor do texto dos links na barra de navegação */
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-principal .navbar-links a:hover {
+    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse sobre os links */
+}
+
+
+/*animacao do texto*/
+
+.typewriter {
+    overflow: hidden; /* Para esconder o texto que vai além da caixa */
+    display: flex;
+
+}
+
+#typed-text {
+    border-right: 2px solid #000;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 0;
+    font-size: 70px;
+    animation: typing 3s steps(15) forwards, blink-caret 0.90s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 38%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000;
+    }
 }
