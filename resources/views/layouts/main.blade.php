@@ -25,9 +25,9 @@
 <body>
 
 <div class="navbar-principal">
-    <div class="container">
+    <div class="container" style="font-size: 24px;">
         <a class="navbar-brand" href="#">Portifólio</a>
-        <div class="navbar-links">
+        <div class="navbar-links" style="font-size: 24px; font-family: 'Pixelify Sans', sans-serif;">
             <a href="#home">Home</a>
             <a href="#perfil">Perfil</a>
             <a href="#contato">Contato</a>
@@ -43,7 +43,7 @@
         </div>
         <p>Desenvolvedor Full-Stack</p>
     </div>
-    <img src="/leoweb/leoweb/resources/img/mini-leo.png" alt="Imagem no canto inferior direito" class="imagem-inferior-direito">
+    <img src="https://github.com/LeoReisSouza/leoweb/blob/main/resources/img/mini-leo.png?raw=true" alt="Imagem no canto inferior direito" class="imagem-inferior-direito">
 </div>
 
 <div class="section escuro"  id="perfil">
@@ -64,7 +64,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
       const textElement = document.getElementById('typed-text');
-      const text = "Leonardo Reis";
+      const text = "Leo Reis";
 
         textElement.innerText = text;
 
